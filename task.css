@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(237, 237, 237);
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+}
+
+h1{
+    margin: 0;
+}
+
+span{
+    color: rgb(79, 79, 201);
+}
+
+a img{
+    width: 20px;
+    padding-left: 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "header header header header"
+    "task-id . task-nr task-nr"
+    "name . task-name task-name"
+    "task-status  checkbox checkbox ."
+    "edit-btn edit-btn edit-btn edit-btn";
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 45px;
+    gap: 15px;
+}
+
+h3{
+    grid-area: header;
+    justify-self: center;
+    margin: 0;
+}
+
+.task-id{
+grid-area: task-id;
+justify-self: start;
+}
+
+p {
+    grid-area: task-nr;
+    justify-self: start;
+    margin: 0;
+}
+
+#name{
+    grid-area: name;
+    justify-self: start;
+    
+}
+
+#task-name{
+    grid-area: task-name;
+    justify-self: start;
+}
+
+#task-status{
+grid-area: task-status;
+justify-self: start;
+}
+
+#checkbox {
+    grid-area: checkbox;
+    justify-self: center;
+}
+
+#edit-btn {
+    grid-area: edit-btn;
+    justify-self: center;
+    width: 100%;
+    background-color:rgb(73, 73, 255) ;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-backtotasks {
+    margin-top: 30px;
+    text-align: center;
+}
+#btn-backtotasks{
+    margin: 30px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 300px;
+    padding-block: 5px;
+    padding-inline: 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;    
+}
